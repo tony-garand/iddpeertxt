@@ -1,0 +1,57 @@
+
+// Body
+$body-bg: #FBFBFD;
+$link-color: #bc2d2d;
+
+// Borders
+$laravel-border-color: darken($body-bg, 3%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #bc2d2d;
+$brand-info: #8eb4cb;
+$brand-success: #2ab27b;
+$brand-warning: #cbb956;
+$brand-danger: #bf5329;
+
+// Typography
+$font-family-sans-serif: "Roboto", sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.6;
+$text-color: #3E3F42;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+$btn-primary-bg-color: #bc2d2d !default;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+// brands
+
+$idd-main-color: #bc2d2d;
+
+$generic-main-color: #444;
+
+
+/* Animations / Transitions / Effects
+-----------------------------------------------------------------------*/
+
+$transitions-primary: all 400ms cubic-bezier(0.645, 0.045, 0.355, 1);
+$shadow-depth-1: 0 1px 3px rgba(0,0,0,0.10);
+$shadow-depth-2: 0 5px 10px rgba(0,0,0,0.10), 0 10px 20px rgba(0,0,0,0.15);
+$shadow-depth-3: 0 10px 20px rgba(0,0,0,0.10), 0 20px 40px rgba(0,0,0,0.15);
+$shadow-depth-4: 0 10px 30px rgba(0,0,0,0.10), 0 30px 60px rgba(0,0,0,0.15);
+$shadow-depth-5: 0 20px 40px rgba(0,0,0,0.10), 0 40px 80px rgba(0,0,0,0.15);

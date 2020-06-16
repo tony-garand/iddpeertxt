@@ -1,0 +1,189 @@
+a {
+	color: $link-color;
+}
+
+body {
+	background-color: $body-bg;
+	
+}
+
+li.active {
+	color: $link-color;
+	a {
+		color: $link-color;
+	}
+}
+
+#add_server_frm, #frm {
+	.btn-primary {
+		background-color: $btn-primary-bg-color;
+		&:active {
+			background-color: darken($btn-primary-bg-color, 5%);
+		}
+	}
+}
+
+.actions {
+	.btn-primary {
+		background-color: $btn-primary-bg-color;
+		color: #fff;
+		&:active {
+			background-color: darken($btn-primary-bg-color, 5%);
+		}
+	}
+}
+
+.dashboard_panel {
+	.panel-heading {
+		background-color: $link-color;
+		color: #fff;
+	}
+}
+
+.listing_block {
+	.inner_block {
+		.is_missing {
+			i {
+				color: $link-color;
+			}
+			color: $link-color;
+		}
+		.rec {
+			.fa-times-circle {
+				color: $link-color;
+			}
+		}
+	}
+}
+
+.loading {
+	i.fa-spin-loading {
+		color: $link-color;
+	}
+}
+
+.login_form {
+	.btn-primary {
+		background-color: $btn-primary-bg-color;
+		&:active {
+			background-color: darken($btn-primary-bg-color, 5%);
+		}
+	}
+}
+
+.inbox_item {
+	clear: both;
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	.snippet {
+		font-size: 14px;
+	}
+
+	.name {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.last_date {
+		font-size: 12px;
+		color: #aaa;
+	}
+	&:last-child {
+		border-bottom: none;
+	}
+	&:hover {
+		background-color: #f5f5f5;
+	}
+}
+
+.inbox_items {
+	.inbox_item {
+	}
+	.inbox_item_on {
+		background-color: #FAFBFC;
+	}
+}
+
+.inbox_main {
+	.message_line {
+		clear: both;
+		overflow: hidden;
+	}
+
+	.message {
+		border-radius: 3px;
+		display: block;
+		clear: both;
+	}
+	.save_ico {
+		float: left;
+		padding-left: 10px;
+	}
+
+	.message_status_0 {
+		border: 1px solid #bbb !important;
+		background-color: lighten(#ccc, 10%) !important;
+	}
+
+	.info {
+		clear: both;
+		overflow: hidden;
+		margin-bottom: 5px;
+		color: #aaa;
+		display: block;
+	}
+
+	.info_direction_2 {
+		float: right;
+		text-align: end;
+	}
+
+	.contact_info {
+		clear: both;
+		overflow: hidden;
+		background-color: $idd-main-color;
+		color: white;
+		padding: 10px;
+		margin-bottom: 20px;
+
+		.contact_info_name {
+			float: left;
+		}
+		.contact_info_address {
+			float: left;
+			padding-left: 30px;
+		}
+	}
+
+	.thread_info {
+		clear: both;
+		overflow: hidden;
+	}
+
+	.reply {
+		clear: both;
+		overflow: hidden;
+		margin-top: 10px;
+	}
+
+	.chat_reply_box {
+		clear: both;
+		margin-bottom: 3px;
+	}
+
+}
+
+.warning_info {
+	background-color: #FFFFDF;
+	border: 1px solid darken(#FFFFDF, 50%);
+	padding: 10px;
+	border-radius: 4px;
+	clear: both;
+	margin-bottom: 20px;
+	overflow: hidden;
+}
+
+.attach_body {
+	padding-bottom: 20px;
+}

@@ -1,0 +1,1 @@
+<a href="/contacts/view/{{ $id }}">{{ $id }}</a>

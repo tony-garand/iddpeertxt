@@ -1,0 +1,1 @@
+<a href="/users/view/{{ $id }}">{{ $id }}</a>

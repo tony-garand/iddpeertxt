@@ -1,0 +1,1 @@
+<a href="/customLabels/view/{{ $id }}">{{ $id }}</a>

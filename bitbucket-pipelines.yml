@@ -1,0 +1,12 @@
+pipelines:   
+  branches:
+    develop:
+     - step:
+         script: 
+           - ssh root@dev.peertxt.co "cd /var/www/peertxt; /usr/bin/git pull; /usr/bin/php artisan migrate; /usr/bin/npm run dev; /usr/bin/php artisan cache:clear; /usr/bin/php artisan view:clear; /usr/bin/php artisan route:clear; /usr/bin/php artisan clear-compiled; /usr/bin/php artisan config:cache; /usr/bin/php artisan config:clear; echo '$BITBUCKET_BUILD_NUMBER' > /var/www/peertxt/version.txt"
+    master:
+     - step:
+         script:
+           - ssh root@jobs.peertxt.co "cd /var/www/peertxt; /usr/bin/git pull; /usr/bin/php artisan migrate --database=mysql2; /usr/bin/npm run dev; /usr/bin/php artisan cache:clear; /usr/bin/php artisan view:clear; /usr/bin/php artisan route:clear; /usr/bin/php artisan clear-compiled; /usr/bin/php artisan config:cache; /usr/bin/php artisan config:clear; echo '$BITBUCKET_BUILD_NUMBER' > /var/www/peertxt/version.txt"
+           - ssh root@www1.peertxt.co "cd /var/www/peertxt; /usr/bin/git pull; /usr/bin/php artisan migrate --database=mysql2; /usr/bin/npm run dev; /usr/bin/php artisan cache:clear; /usr/bin/php artisan view:clear; /usr/bin/php artisan route:clear; /usr/bin/php artisan clear-compiled; /usr/bin/php artisan config:cache; /usr/bin/php artisan config:clear; echo '$BITBUCKET_BUILD_NUMBER' > /var/www/peertxt/version.txt"
+           - ssh root@www2.peertxt.co "cd /var/www/peertxt; /usr/bin/git pull; /usr/bin/php artisan migrate --database=mysql2; /usr/bin/npm run dev; /usr/bin/php artisan cache:clear; /usr/bin/php artisan view:clear; /usr/bin/php artisan route:clear; /usr/bin/php artisan clear-compiled; /usr/bin/php artisan config:cache; /usr/bin/php artisan config:clear; echo '$BITBUCKET_BUILD_NUMBER' > /var/www/peertxt/version.txt"
