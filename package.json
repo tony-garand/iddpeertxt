@@ -14,7 +14,7 @@
         "bootstrap-sass": "^3.3.7",
         "cross-env": "^5.2.0",
         "empty-module": "0.0.2",
-        "jquery": "^3.2",
+        "jquery": "^3.5",
         "laravel-mix": "^2.1.14",
         "lodash": "^4.17.19",
         "selectize": "^0.12.6",
