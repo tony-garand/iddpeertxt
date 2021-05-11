@@ -16,7 +16,7 @@
         "empty-module": "0.0.2",
         "jquery": "^3.5",
         "laravel-mix": "^2.1.14",
-        "lodash": "^4.17.19",
+        "lodash": "^4.17.21",
         "selectize": "^0.12.6",
         "sortablejs": "^1.7.0",
         "spectrum-colorpicker": "^1.8.0",
