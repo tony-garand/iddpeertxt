@@ -24,7 +24,7 @@
     },
     "dependencies": {
         "chosen-js": "^1.8.7",
-        "datatables.net": "^1.10.16",
+        "datatables.net": "^1.11.3",
         "laravel-echo": "^1.6.1",
         "lightbox2": "^2.10.0",
         "moment": "^2.20.1",
