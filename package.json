@@ -27,7 +27,7 @@
         "datatables.net": "^1.10.16",
         "laravel-echo": "^1.6.1",
         "lightbox2": "^2.10.0",
-        "moment": "^2.20.1",
+        "moment": "^2.29.4",
         "popper.js": "^1.16.0",
         "puppeteer": "^1.1.1",
         "pusher-js": "^5.0.3",
